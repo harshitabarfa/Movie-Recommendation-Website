@@ -61,6 +61,8 @@ select {
 #movie-Info {
   width: 80%;
   margin: 32px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #movie-Info:after {
@@ -72,7 +74,7 @@ select {
 #movie-Poster,
 #movie-Text {
   width: 50%;
-  float: left;
+  /* float: left; */
 }
 
 img#movie-Poster {
@@ -122,4 +124,48 @@ img {
 
 #next-Btn:active {
   color: #50b2d3;
+}
+
+@media screen and (max-width: 1024px) {
+  #next-Btn {
+    top: 69%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  #movie-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+  }
+  #movie-Info,
+  #movie-Text {
+    text-align: center !important;
+  }
+  img {
+    margin: 0px;
+  }
+  #next-Btn {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #app-Title{
+    font-size: 2rem;
+  }
+  #movie-Info {
+    margin: auto;
+    width: 95%;
+  }
+  #movie-Poster,
+  #movie-Text {
+    width: auto;
+  }
+  #movie-Poster{
+    padding-top: 20px;
+  }
 }
