@@ -116,9 +116,6 @@ img {
   background-color: white;
   color: rgba(0, 0, 0, 0.781);
   cursor: pointer;
-  position: absolute;
-  left: 50%;
-  top: 79.5%;
   border-radius: 5px;
 }
 
